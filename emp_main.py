@@ -1,5 +1,5 @@
 from fastapi import FastAPI,HTTPException
-from emp_model import Employee
+from model_val import Employee
 from typing import List
 
 
