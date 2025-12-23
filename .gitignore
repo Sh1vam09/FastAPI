@@ -1,7 +1,11 @@
+# Python cache
+__pycache__/
+*.pyc
+
 # Virtual environments
 .venv/
 venv/
 env/
 
-# Notes folder (your local docs)
+# Notes
 notes/
