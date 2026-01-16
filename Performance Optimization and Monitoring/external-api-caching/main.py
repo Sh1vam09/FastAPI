@@ -5,6 +5,13 @@ import httpx
 from fastapi import FastAPI
 from pydantic import BaseModel
 
+
+# httpx is used to call external APIs because it supports async requests.
+# This allows FastAPI to handle other requests while waiting for
+# network responses, instead of blocking the event loop like requests.
+
+
+
 app = FastAPI()
 redis_client = redis.Redis(host='localhost', port=6379, db=0)
 
